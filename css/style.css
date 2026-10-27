@@ -1,0 +1,55 @@
+/* All common css start */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+/* All common css end */
+#headerpart{
+    padding: 30px;
+    background-color: teal;
+}
+.menu ul{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.menu ul li{
+     position: relative;
+}
+.menu ul li a{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .4s;
+    font-family: "Oswald", sans-serif;
+   
+}
+
+.menu ul li a:hover{
+color: tomato;
+}
+.effect{
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 25px;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu ul li:hover .effect{
+    visibility: visible;
+    opacity: 1;
+}
